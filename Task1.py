@@ -21,7 +21,7 @@ while p != 5:
             total_distance.append(result)
             n = j
             p += 1
-        elif p == 4:
+        elif p == len(points) - 1:
             stray = ((points[n][0] - points[0][0]) ** 2 + (points[n][1] - points[0][1]) ** 2) ** 0.5
             path += stray
             print(f' -> {points[0]}[{path}]', end='')
